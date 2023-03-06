@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/styles.css';
+import './sass/style.css';
 import './css/normalize.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
