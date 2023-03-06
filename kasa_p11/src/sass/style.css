@@ -225,4 +225,51 @@ body {
 
 h1, h2, h3 {
   margin: 0 !important;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error-code {
+  font-weight: 700;
+  font-size: 288px;
+  color: #FF6060;
+  margin: 150px auto 40px auto;
+}
+.error-message {
+  font-weight: 500;
+  font-size: 36px;
+  color: #FF6060;
+  margin-bottom: 180px;
+  margin-top: 0;
+}
+.error-backlink {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FF6060;
+  margin-bottom: 180px;
+}
+
+@media screen and (max-width: 375px) {
+  .error-code {
+    font-size: 96px;
+  }
+  .error-message {
+    font-size: 18px;
+    padding: 0 40px 0 40px;
+    margin-bottom: 130px;
+    margin-top: 0;
+    text-align: center;
+  }
+  .error-backlink {
+    font-size: 14px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .error-message {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
