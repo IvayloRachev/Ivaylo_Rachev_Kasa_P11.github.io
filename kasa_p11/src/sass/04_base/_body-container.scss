@@ -1,15 +1,15 @@
 .body-container {
     width: 100%;
-    max-width: $breakpoint-desktop;
+    //width: $breakpoint-desktop;
     margin: 40px auto 40px auto;
 
     nav {
-        width: 90%;
+        width: 80%;
         margin: auto;
     }
 
     main {
-        width: 90%;
+        width: 80%;
         margin: auto;
     }
   }
