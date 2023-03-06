@@ -20,4 +20,23 @@
 }
 .header-navigation-menu_active {
   text-decoration: underline !important;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: black;
+  height: 200px;
+  margin-top: 40px;
+}
+.footer-image {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.footer-copyright {
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
