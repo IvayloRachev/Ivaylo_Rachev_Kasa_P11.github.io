@@ -2,6 +2,16 @@
     width: 100%;
     max-width: $breakpoint-desktop;
     margin: 40px auto 40px auto;
+
+    nav {
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
   }
   
   @media only screen and (max-width: $breakpoint-mobile) {
