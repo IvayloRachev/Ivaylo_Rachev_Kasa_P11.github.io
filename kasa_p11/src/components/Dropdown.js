@@ -32,7 +32,7 @@ function Dropdown({title, content, classArticle, classTitle, classContent}) {
 
 Dropdown.propTypes = {
     title: PropTypes.string,
-    content: PropTypes.node,
+    content: PropTypes.string,
     classArticle: PropTypes.string,
     classTitle: PropTypes.string,
     classList: PropTypes.string,

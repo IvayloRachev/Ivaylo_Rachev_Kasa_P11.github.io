@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from '../assets/hero-home.jpg';
+import HeroImage from '../assets/hero-about.jpg';
 import Dropdown from '../components/Dropdown';
 
 function About() {
