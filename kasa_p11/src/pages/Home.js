@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroImage from '../assets/hero-home.jpg';
-import listings from '../data/data';
+import lodgements from '../data/data';
 import {Link} from 'react-router-dom';
 
 function Home() {
@@ -12,12 +12,12 @@ function Home() {
             </section>
             <section className='home-cards'>
                 {
-                    listings.map((listing) => {
+                    lodgements.map((lodgement) => {
                         return (
-                            <article key={listing.id} className='home-cards-article'>
-                                <Link to={`/listings/${listing.id}`}>
-                                    <img src={listing.cover} alt={listing.title} className='home-cards-article-image' />
-                                    <h2 className='home-cards-article-title'>{listing.title}</h2>
+                            <article key={lodgement.id} className='home-cards-article'>
+                                <Link to={`/lodgement/${lodgement.id}`}>
+                                    <img src={lodgement.cover} alt={lodgement.title} className='home-cards-article-image' />
+                                    <h2 className='home-cards-article-title'>{lodgement.title}</h2>
                                 </Link>
                             </article>
                         )
