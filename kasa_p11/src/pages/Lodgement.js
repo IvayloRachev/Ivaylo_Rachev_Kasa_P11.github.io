@@ -12,11 +12,11 @@ function Lodgement() {
         return <Navigate to="/error"/>
     }
 
-    let {pictures, title, tags, location, rating, host, equipments, description} = lodgement;
+    let {/*pictures,*/ title, tags, location, /*rating,*/ host, equipments, description} = lodgement;
     return (
         <div className='lodgement'>
             <section className='lodgement-carousel'>
-            
+
             </section>
             <section className='lodgement-meta'>
                 <div className='lodgement-meta-part-1'>
