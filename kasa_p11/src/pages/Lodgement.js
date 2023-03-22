@@ -1,6 +1,7 @@
 import React from 'react';
 import {useParams, Navigate} from 'react-router-dom';
 import lodgements from '../data/data';
+import Dropdown from '../components/Dropdown';
 
 function Lodgement() {
     let {lodgementId} = useParams();
@@ -14,7 +15,41 @@ function Lodgement() {
     let {pictures, title, tags, location, rating, host, equipments, description} = lodgement;
     return (
         <div className='lodgement'>
-            
+            <section className='lodgement-carousel'>
+                
+            </section>
+            <section className='lodgement-meta'>
+                <div className='lodgement-meta-part-1'>
+                    <h1>{title}</h1>
+                    <p>{location}</p>
+                    <div className='lodgement-meta-part-1-tags'>
+                        {tags.map((tag, index) => (
+                            <p key={index}>{tag}</p>
+                        ))}
+                    </div>
+                </div>
+                <div className='lodgement-meta-part-2'>
+                    <div className='lodgement-meta-part-2-host'>
+                        <img src={host.picture} className='lodgement-meta-part-2-host-image' alt="Profil du proprietaire" />
+                        <p className='lodgement-meta-part-2-host-name'>{host.name}</p>
+                    </div>
+                    <div className='lodgement-meta-part-2-rating'>
+                        
+                    </div>
+                </div>
+            </section>
+            <section className='lodgement-content'>
+                <Dropdown title="Description"
+                          content={description}
+                          classArticle="lodgement-content-dropdown"
+                          classTitle="lodgement-content-dropdown-title"
+                          classContent="lodgement-content-dropdown-content"/>
+                <Dropdown title="Equipments"
+                          content={equipments.map((element, index) => (<span key={index}>{element}</span>))}
+                          classArticle="lodgement-content-dropdown"
+                          classTitle="lodgement-content-dropdown-title"
+                          classContent="lodgement-content-dropdown-content"/>
+            </section>
         </div>
     )
 }
