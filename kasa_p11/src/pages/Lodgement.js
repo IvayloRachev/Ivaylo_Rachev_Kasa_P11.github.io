@@ -2,6 +2,7 @@ import React from 'react';
 import {useParams, Navigate} from 'react-router-dom';
 import lodgements from '../data/data';
 import Dropdown from '../components/Dropdown';
+import Carousel from '../components/Carousel';
 
 function Lodgement() {
     let {lodgementId} = useParams();
@@ -12,11 +13,11 @@ function Lodgement() {
         return <Navigate to="/error"/>
     }
 
-    let {/*pictures,*/ title, tags, location, /*rating,*/ host, equipments, description} = lodgement;
+    let {pictures, title, tags, location, /*rating,*/ host, equipments, description} = lodgement;
     return (
         <div className='lodgement'>
             <section className='lodgement-carousel'>
-
+                <Carousel images={pictures} title={title}/>
             </section>
             <section className='lodgement-meta'>
                 <div className='lodgement-meta-part-1'>
