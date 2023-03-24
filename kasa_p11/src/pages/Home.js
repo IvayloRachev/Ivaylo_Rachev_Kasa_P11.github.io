@@ -15,7 +15,7 @@ function Home() {
                     lodgements.map((lodgement) => {
                         return (
                             <article key={lodgement.id} className='home-cards-article'>
-                                <Link to={`/lodgement/${lodgement.id}`}>
+                                <Link to={`/lodgements/${lodgement.id}`}>
                                     <img src={lodgement.cover} alt={lodgement.title} className='home-cards-article-image' />
                                     <h2 className='home-cards-article-title'>{lodgement.title}</h2>
                                 </Link>

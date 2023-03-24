@@ -6,7 +6,7 @@ import CarouselArrowRight from '../assets/carousel-arrow-right.svg';
 
 function Carousel({images, title}) {
     let [currentImage, setCurrentImage] = useState(0);
-    let numberOfImages = images.legth;
+    let numberOfImages = images.length;
 
     return (
         <div>

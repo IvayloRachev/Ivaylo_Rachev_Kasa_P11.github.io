@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Error from './pages/Error';
 import About from './pages/About';
+import Lodgement from './pages/Lodgement';
 
 function Kasa() {
   return (
@@ -21,6 +22,7 @@ function Kasa() {
             <Route path="home" element={<Home/>}/>
             <Route path="*" element={<Error/>}/>
             <Route path="about" element={<About/>}/>
+            <Route path="lodgements/:lodgementId" element={<Lodgement/>}/>
           </Routes>
         </main>
         <footer>
