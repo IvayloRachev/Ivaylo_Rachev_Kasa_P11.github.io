@@ -1,0 +1,348 @@
+.lodgement {
+    &-carousel {
+        margin-top: 100px;
+        position: relative;
+   
+
+        &-image {
+            width: 100%;
+            height: 415px;
+            border-radius: 25px;
+            object-fit: cover;
+            background-color: $color-darker-gray;
+        }
+
+        &-counter {
+            position: absolute;
+            top: 355px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        &-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+            &_left {
+                left: 50px;
+            }
+
+            &_right {
+                right: 0;
+            }
+        }
+    }
+
+    &-meta {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        &-part-1 {
+            h1 {
+                font-size: 36px;
+                font-weight: 500;
+                color: $color-font-primary;
+                line-height: 50px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                color: $color-font-primary;
+                line-height: 25px;
+                margin-top: 0;
+            }
+
+            &-tags {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+            
+
+                p {
+                    margin-right: 10px;
+                    background-color: $color-background-primary;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 40px 5px 40px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    
+
+        &-part-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &-host {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+
+                &-image {
+                    border-radius: 50%;
+                    width: 65px;
+                    height: 65px;
+                    background-color: $color-darker-gray;
+                }
+
+                &-name {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $color-font-primary;
+                    text-align: right;
+                    margin-right: 10px;
+                    width: 90px;
+                }
+            }
+
+            &-rating {
+                padding: 5px 0 5px 40px;
+
+                img {
+                    margin-left: 10px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    &-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        margin-top: 40px;
+
+        &-dropdown {
+            display: flex;
+            flex-direction: column;
+
+            &-title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $color-background-primary;
+                border-radius: 10px;
+                z-index: 1;
+                cursor: pointer;
+
+                h2 {
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: white;
+                    padding: 13px 20px 13px 20px;
+                }
+
+                img {
+                    padding: 13px 20px 13px 13px;
+                }
+            }
+
+            &-content {
+                background-color: $color-lighter-gray;
+                font-weight: 400;
+                font-size: 18px;
+                color: $color-font-primary;
+                padding: 45px 20px 40px 20px;
+                border-radius: 10px;
+                height: 300px;
+                margin-top: -15px;
+                line-height: 30px;
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+    .lodgement {
+        &-carousel {
+            margin-top: 20px;
+            position: relative;
+
+            &-image {
+                height: 255px;
+                border-radius: 10px;
+            }
+
+            &-counter {
+                display: none;
+                top: 210px;
+                font-size: 12px;
+                padding: 15px;
+                border-radius: 5px;
+            }
+
+            &-arrow {
+                height: 20px;
+
+                &_left {
+                    left: 15px;
+                }
+
+                &_right {
+                    right: 0;
+                }
+            }
+        }
+
+        &-meta {
+            margin-top: 15px;
+            flex-direction: column;
+
+            &-part-1 {
+                h1 {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-top: 5px;
+                }
+
+                &-tags {
+                    margin-top: 10px;
+
+                    p {
+                        margin-right: 5px;
+                        font-size: 10px;
+                        padding: 1px 10px 1px 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            &-part-2 {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+
+                &-host {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+
+                    &-image {
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    &-name {
+                        font-size: 12px;
+                        width: 60px;
+                    }
+                }
+
+                &-rating {
+                    padding: 5px 0 5px 0;
+
+                    img {
+                        margin-left: 5px;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+
+        &-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            margin-top: 20px;
+
+            &-dropdown {
+                &-title {
+                    border-radius: 5px;
+
+                    h2 {
+                        font-size: 13px;
+                        padding: 6px 11px 6px 11px;
+                    }
+
+                    img {
+                        padding: 6px 11px 6px 11px;
+                        height: 20px;
+                    }
+                }
+
+                &-content {
+                    font-size: 12px;
+                    padding: 30px 10px 10px 10px;
+                    border-radius: 5px;
+                    line-height: 17px;
+                    height: auto;
+
+                    ul {
+                        list-style-type: none;
+                        padding-left: 0;
+                    }
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+    .lodgement{
+        &-carousel {
+            margin-top: 40px;
+        }
+
+        &-meta {
+            margin-top: 20px;
+
+            &-part-2 {
+                &-host {
+                    &-image {
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+
+                &-rating {
+                    padding: 5px 0 15px 0;
+
+                    img {
+                        margin-left: 5px;
+                        width: 25px;
+                    }
+                }
+            }
+        }
+
+        &-content {
+            margin-top: 20px;
+        }
+    }
+}
