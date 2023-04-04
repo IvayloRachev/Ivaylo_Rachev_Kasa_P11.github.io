@@ -16,6 +16,9 @@
         color: $color-font-primary;
         margin-bottom: 180px;
         margin-top: 0;
+        br {
+            display: none;
+        }
     }
 
     &-backlink {
@@ -30,27 +33,24 @@
     .error {
         &-code {
             font-size: 96px;
+            margin-bottom: 5%;
         }
 
         &-message {
+            width: 100%;
             font-size: 18px;
-            padding: 0 40px 0 40px;
             margin-bottom: 130px;
             margin-top: 0;
             text-align: center;
+
+            br {
+                display: block;
+            }
         }
 
         &-backlink {
             font-size: 14px;
             margin-bottom: 100px;
-        }
-    }
-}
-
-@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
-    .error {
-        &-message {
-            text-align: center;
         }
     }
 }
