@@ -8,7 +8,7 @@ function Home() {
         <div className='home'>
             <section className='home-hero'>
                 <img src={HeroImage} alt='Hero' className='home-hero-image'/>
-                <h1 className='home-hero-text'>Chez vous, partout et ailleurs</h1>
+                <h1 className='home-hero-text'>Chez vous, <br/>partout et ailleurs</h1>
             </section>
             <section className='home-cards'>
                 {
