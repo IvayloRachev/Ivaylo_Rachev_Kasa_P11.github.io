@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 
 function Header() {
     return (
-        <div className="header-navigation">
+        <header className="header-navigation">
             <NavLink to="/home">
                 <img src={LogoColor} alt="Logo Kasa" className="header-navigation-image" />
             </NavLink>
@@ -16,7 +16,7 @@ function Header() {
                     A Propos
                 </NavLink>
             </div>
-        </div>
+        </header>
     )
 }
 

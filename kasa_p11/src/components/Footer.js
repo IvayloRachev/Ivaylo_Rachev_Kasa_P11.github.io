@@ -4,12 +4,12 @@ import {NavLink} from 'react-router-dom';
 
 function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <NavLink>
                 <img src={LogoWhite} alt="Logo Kasa" className="footer-image" />
             </NavLink>
             <p className="footer-copyright">© 2020 Kasa. All rights reserved.</p>
-        </div>
+        </footer>
     )
 }
 
