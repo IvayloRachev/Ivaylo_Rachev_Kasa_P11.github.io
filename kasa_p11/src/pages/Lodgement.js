@@ -1,8 +1,8 @@
 import React from 'react';
 import {useParams, Navigate} from 'react-router-dom';
 import lodgements from '../data/data';
-import Dropdown from '../components/Dropdown';
-import Carousel from '../components/Carousel';
+import Collapse from '../components/Collapse';
+import Gallery from '../components/Gallery';
 import Rating from '../components/Rating';
 
 function Lodgement() {
@@ -18,7 +18,7 @@ function Lodgement() {
     return (
         <div className='lodgement'>
             <section className='lodgement-carousel'>
-                <Carousel images={pictures} title={title}/>
+                <Gallery images={pictures} title={title}/>
             </section>
             <section className='lodgement-meta'>
                 <div className='lodgement-meta-part-1'>
@@ -41,12 +41,12 @@ function Lodgement() {
                 </div>
             </section>
             <section className='lodgement-content'>
-                <Dropdown title="Description"
+                <Collapse title="Description"
                           content={description}
                           classArticle="lodgement-content-dropdown"
                           classTitle="lodgement-content-dropdown-title"
                           classContent="lodgement-content-dropdown-content"/>
-                <Dropdown title="Equipments"
+                <Collapse title="Equipments"
                           content={equipments.map((element, index) => (<span key={index}>{element}</span>))}
                           classArticle="lodgement-content-dropdown"
                           classTitle="lodgement-content-dropdown-title"
