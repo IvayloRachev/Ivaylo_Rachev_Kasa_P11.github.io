@@ -125,3 +125,21 @@
       }
     }
   }
+
+  @media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .home {
+
+      &-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 768px) {
+    .home {
+
+      &-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
